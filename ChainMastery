@@ -1,0 +1,26 @@
+# ChainMastery.py
+
+class ChainMastery:
+    def __init__(self, platform_name, mastery_topics):
+        self.platform_name = platform_name
+        self.mastery_topics = mastery_topics
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Mastery Topics:")
+        for topic in self.mastery_topics:
+            print(f"- {topic}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "ChainMastery"
+    mastery_topics = [
+        "Blockchain fundamentals",
+        "Smart contracts development",
+        "Cryptocurrency trading strategies",
+        "DeFi protocols",
+        "NFT ecosystem"
+    ]
+    
+    chain_mastery = ChainMastery(platform_name, mastery_topics)
+    chain_mastery.display_platform_info()
